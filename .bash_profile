@@ -29,7 +29,7 @@ fi
 umask 006
 
 #5-Add /home/<username>/usercommands
-export PATH="$PATH:/home/<ghazal>/usercommands"
+export PATH="$PATH:/home/<$USER>/usercommands"
 
 #6-Print the current date on screen in ISO 8601 format. The precision should be seconds, and the timezone should be UTC.
 date -u +"%Y-%m-%dT%H:%M:%S%z"
@@ -63,10 +63,6 @@ else
     echo "No process bound to port 8080 found."
 fi
 
-#Create a new user
-sudo adduser <Shahd>
-#Switch to the new user's terminal session:
-su -l <Shahd>
 
 
 

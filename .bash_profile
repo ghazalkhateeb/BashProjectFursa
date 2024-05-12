@@ -9,6 +9,7 @@ export COURSE_ID=DevOpsFursa
 token_file="$HOME/.token"
 
 # Check if the file exists
+
 if [ -e "$token_file" ]; then
     # Get the octal representation of the file permissions
     permissions=$(stat -c "%a" "$token_file")

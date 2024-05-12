@@ -8,6 +8,7 @@ export COURSE_ID=DevOpsFursa
 # Define the path to the .token file
 token_file="$HOME/.token"
 
+
 # Check if the file exists
 
 if [ -e "$token_file" ]; then

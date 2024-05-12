@@ -21,8 +21,6 @@ if [ -e "$token_file" ]; then
     if [ "$permissions" != "600" ]; then
         echo "Warning: .token file has too open permissions"
     fi
-else
-    echo ".token file not found in the home directory."
 fi
 
 #4-Change the umask of the user such that the default permissions of new created files will be r and w for the user and the group only.

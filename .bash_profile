@@ -44,21 +44,16 @@ tmp_dir="$HOME/tmp"
 if [ ! -d "$tmp_dir" ]; then
     # If it doesn't exist, create it
     mkdir "$tmp_dir"
-    echo "Created ~/tmp directory"
 else
     # If it exists, clean it (delete all contents)
     rm -rf "$tmp_dir"/*
-    echo "Cleaned ~/tmp directory"
 fi
 
 #9-If it exists, kill the process that is bound to port 8080.
 # Check if a process is bound to port 8080
 if lsof -ti :8080 &> /dev/null; then
     # If a process is found, kill it
-    echo "Process bound to port 8080 found. Killing..."
     kill $(lsof -ti :8080)
-else
-    echo "No process bound to port 8080 found."
 fi
 
 

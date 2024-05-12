@@ -27,7 +27,7 @@ fi
 umask 006
 
 #5-Add /home/<username>/usercommands
-export PATH="$PATH:/home/<$USER>/usercommands"
+export PATH="$PATH:/home/<$USER>/usercommands/"
 
 #6-Print the current date on screen in ISO 8601 format. The precision should be seconds, and the timezone should be UTC.
 date -u +"%Y-%m-%dT%H:%M:%S%z"
